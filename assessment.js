@@ -8,9 +8,9 @@
 // CODE HERE
 var me = {
   firstname:"Prakarsh",
-  age:18,
+  age:"18",
   state:"Uttar Pradesh"
-}; 
+};
 /**
  * #2
  *
@@ -48,11 +48,11 @@ var adjustCount = {
  upVote: function (num){
     num++;
     return num;
-  };
+  },
  downVote: function(num){
     num--;
     return num;
-  };
+  }
 };
 /**
  * #5
@@ -92,10 +92,10 @@ var myArrayCopy= myArray.slice();
 //DON'T TOUCH THE CODE BELOW
 var myNumbers = [333, 1, 4, 5, 511, 34, 88, 77, 222];
 //DON'T TOUCH THE CODE ABOVE
-function evensOnly(arr) {
+function evensOnly() {
   // CODE HERE
-var evenArray = arr.filter(function(val,i,arr){
-return val%2==0
+var evenArray = myNumbers.filter(function(val,i,arr1){
+  return val%2==0
 })
 return evenArray
 }
@@ -132,7 +132,7 @@ trueFriends=peopleIknow.filter(function(val,i,arr){
 let randomNumbers = [1, 3453, 34, 456, 32, 3, 2, 0];
 function indexFinder(arr){
   for(i=0;i<arr.length;i++){
-   arr.splice(i,1,arr.indexOf(i)) 
+   arr.splice(i,1,i) 
   };
   return arr
 };
